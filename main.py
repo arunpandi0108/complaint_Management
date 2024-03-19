@@ -10,22 +10,22 @@ conn = DBConnect()
 root = Tk()
 root.geometry('600x285')
 root.title('Complaint Management')
-root.configure(background='#AEB6BF')
+root.configure(background='#ADD8E6')
 
 #Style
 style = Style()
 style.theme_use('classic')
 for elem in ['TLabel', 'TButton', 'TRadioutton']:
-	style.configure(elem, background='#AEB6BF')
+	style.configure(elem, background='white')
 
 #Gridx1353
-labels = ['Full Name:', 'Gender:', 'Comment:']
+labels = ['Name:', 'Gender:', 'Comment:']
 for i in range(3):
 	Label(root, text=labels[i]).grid(row=i, column=0, padx=10, pady=10)
 
-BuList = Button(root, text='List Comp.')
+BuList = Button(root, text='List of grievances')
 BuList.grid(row=4, column=1)
-BuSubmit = Button(root, text='Submit Now')
+BuSubmit = Button(root, text='Submit')
 BuSubmit.grid(row=4, column=2)
 
 #Entries
